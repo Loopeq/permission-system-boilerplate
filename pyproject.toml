@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "permission-system-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Loopeq <arsen.00z11@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.139.0"}
+uvicorn = "^0.49.0"
+sqlalchemy = "^2.0.51"
+psycopg2-binary = "^2.9.12"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.5.0"}
+python-multipart = "^0.0.32"
+bcrypt = "3.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.15.20"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
